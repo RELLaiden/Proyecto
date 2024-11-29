@@ -1,0 +1,58 @@
+@media screen and (max-width:750px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width:580px) {
+    html {
+      font-size: 15px;
+    }
+  
+    .container-form {
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .information {
+      width: 100%;
+      padding: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0;
+    }
+  
+    .form-information {
+      width: 100%;
+      padding: 20px;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 0;
+    }
+  }
+
+  .cargando {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.barra-carga {
+    width: 100%;
+    background-color: #eee6e6;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progreso {
+    width: 0;
+    height: 10px;
+    background-color: #4caf50;
+    animation: carga 3s forwards; /* Duración de la animación */
+}
+
+@keyframes carga {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
